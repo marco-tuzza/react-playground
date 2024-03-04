@@ -54,6 +54,62 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+div.dial {
+  width: 500px;
+  height: 500px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+div.pin {
+  width: 10px;
+  height: 10px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+div.hour-hand {
+  width: 10px;
+  height: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  z-index: 2;
+}
+
+div.minute-hand {
+  width: 5px;
+  height: 200px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  z-index: 1;
+}
+
+div.seconds-hand {
+  width: 2px;
+  height: 230px;
+  background-color: #909090;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
