@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -46,9 +47,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -57,9 +60,11 @@ button:focus-visible {
 div.dial {
   width: 500px;
   height: 500px;
-  border: 4px solid #ffffff;
+  background-color: #161616;
   border-radius: 50%;
   position: relative;
+  box-shadow: inset 20px 20px 60px #161616,
+  inset -20px -20px 60px #1e1e1e;
 }
 
 div.pin {
@@ -75,33 +80,29 @@ div.pin {
 }
 
 div.hour-hand {
-  width: 10px;
+  width: 5px;
   height: 150px;
   background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform-origin: 50% 100%;
-  border-top-left-radius: 80%;
-  border-top-right-radius: 80%;
   z-index: 2;
 }
 
 div.minute-hand {
-  width: 5px;
+  width: 2px;
   height: 200px;
   background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform-origin: 50% 100%;
-  border-top-left-radius: 40%;
-  border-top-right-radius: 40%;
   z-index: 1;
 }
 
 div.seconds-hand {
-  width: 2px;
+  width: 1px;
   height: 230px;
   background-color: #909090;
   position: absolute;
@@ -115,9 +116,11 @@ div.seconds-hand {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
