@@ -1,3 +1,9 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #161616;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -55,60 +61,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-div.dial {
-  width: 500px;
-  height: 500px;
-  background-color: #161616;
-  border-radius: 50%;
-  position: relative;
-  box-shadow: inset 20px 20px 60px #161616,
-  inset -20px -20px 60px #1e1e1e;
-}
-
-div.pin {
-  width: 10px;
-  height: 10px;
-  background-color: #FF0000;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-div.hour-hand {
-  width: 5px;
-  height: 150px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: 50% 100%;
-  z-index: 2;
-}
-
-div.minute-hand {
-  width: 2px;
-  height: 200px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: 50% 100%;
-  z-index: 1;
-}
-
-div.seconds-hand {
-  width: 1px;
-  height: 230px;
-  background-color: #909090;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: 50% 100%;
 }
 
 @media (prefers-color-scheme: light) {

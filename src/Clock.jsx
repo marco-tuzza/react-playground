@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./css/Clock.css";
 
 export default function Clock() {
     const [degrees, setDegrees] = useState({ hours: 0, minutes: 0, seconds: 0 });
@@ -10,7 +11,7 @@ export default function Clock() {
         const seconds = date.getSeconds();
         const degreesMinutes = (minutes * 360) / 60;
         const degreesHours = (hours * 360) / 12 + (minutes * 360) / 60 / 12;
-        const degreesSeconds = (seconds * 360) / 60;
+        const degreesSeconds = (hours * (360 * 60)) + (minutes * 360) + (seconds * 6);
 
         setDegrees({
             hours: degreesHours,

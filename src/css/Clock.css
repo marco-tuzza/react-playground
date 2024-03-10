@@ -1,0 +1,54 @@
+div.dial {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(145deg, #141414, #181818);
+    box-shadow: 20px 20px 60px #131313,
+    -20px -20px 60px #191919;
+}
+
+div.pin {
+    width: 8px;
+    height: 8px;
+    background: #99201C;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+div.hour-hand {
+    width: 5px;
+    height: 150px;
+    background-color: #F9F7F8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    z-index: 2;
+}
+
+div.minute-hand {
+    width: 2px;
+    height: 200px;
+    background-color: #F9F7F8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    z-index: 1;
+}
+
+div.seconds-hand {
+    width: 1px;
+    height: 230px;
+    background-color: #909090;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transition: 1s linear;
+}

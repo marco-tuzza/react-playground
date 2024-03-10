@@ -1,9 +1,11 @@
 import Clock from './Clock'
-import './App.css'
+import HamburgerMenu from './HamburgerMenu';
+import './css/App.css'
 
 function App() {
   return (
     <>
+      <HamburgerMenu />
       <Clock />
     </>
   );

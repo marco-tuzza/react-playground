@@ -1,0 +1,19 @@
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-menu__line {
+  width: 20px;
+  height: 1px;
+  background-color: #646cff;
+  transition: transform 0.25s, opacity 0.25s;
+}
