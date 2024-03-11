@@ -23,7 +23,7 @@ div.pin {
 div.hour-hand {
     width: 5px;
     height: 150px;
-    background-color: #F9F7F8;
+    background-color: #e0e0e0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,7 +34,7 @@ div.hour-hand {
 div.minute-hand {
     width: 2px;
     height: 200px;
-    background-color: #F9F7F8;
+    background-color: #e0e0e0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,4 +51,28 @@ div.seconds-hand {
     left: 50%;
     transform-origin: 50% 100%;
     transition: 1s linear;
+}
+
+@media (prefers-color-scheme: light) {
+    div.dial {
+        background: linear-gradient(145deg, #e0e0e0, #e0e0e0);
+        box-shadow: 20px 20px 60px #d0d0d0,
+        -20px -20px 60px #e0e0e0;
+    }
+
+    div.pin {
+        background: #99201C;
+    }
+
+    div.hour-hand {
+        background-color: #141414;
+    }
+
+    div.minute-hand {
+        background-color: #141414;
+    }
+
+    div.seconds-hand {
+        background-color: #141414;
+    }
 }

@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .hamburger-menu__line {
@@ -16,4 +16,10 @@
   height: 1px;
   background-color: #646cff;
   transition: transform 0.25s, opacity 0.25s;
+}
+
+@media (prefers-color-scheme: light) {
+  .hamburger-menu__line {
+    background-color: #213547;
+  }
 }

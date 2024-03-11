@@ -1,6 +1,6 @@
-import Clock from './Clock'
-import HamburgerMenu from './HamburgerMenu';
-import './css/App.css'
+import Clock from './components/clock/Clock'
+import HamburgerMenu from './components/hamburger-menu/HamburgerMenu';
+import './App.css'
 
 function App() {
   return (
