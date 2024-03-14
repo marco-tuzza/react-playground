@@ -18,6 +18,36 @@
   transition: transform 0.25s, opacity 0.25s;
 }
 
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+
+.menu button:last-child {
+  border-bottom: none;
+}
+
+.menu button:hover {
+  background-color: #f7f7f7;
+}
+
 @media (prefers-color-scheme: light) {
   .hamburger-menu__line {
     background-color: #213547;
