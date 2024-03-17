@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './HamburgerMenu.css';
 
 export default function HamburgerMenu({ onChangeProject }) {
-  const [isOpen, setIsOpen] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -13,7 +13,8 @@ export default function HamburgerMenu({ onChangeProject }) {
         <div className="hamburger-menu__line"></div>
         <div className="hamburger-menu__line"></div>
       </div>
-      {isOpen && (
+
+      { isOpen && (
         <div className="menu">
           <button onClick={() => onChangeProject('clock')}>Orologio</button>
           <button onClick={() => onChangeProject('todo')}>To-Do List</button>

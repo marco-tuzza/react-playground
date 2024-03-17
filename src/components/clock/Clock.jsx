@@ -11,7 +11,7 @@ export default function Clock() {
         const seconds = date.getSeconds();
         const degreesMinutes = (minutes * 360) / 60;
         const degreesHours = (hours * 360) / 12 + (minutes * 360) / 60 / 12;
-        const degreesSeconds = (hours * (360 * 60)) + (minutes * 360) + (seconds * 6);
+        const degreesSeconds = (seconds * 360) / 60;
 
         setDegrees({
             hours: degreesHours,
@@ -25,9 +25,9 @@ export default function Clock() {
         return () => clearInterval(interval);
     }, []);
 
-    var styleMinutes = { transform: `translate(-50%, -100%) rotate(${degrees.minutes}deg)` }
-    var styleHours = { transform: `translate(-50%, -100%) rotate(${degrees.hours}deg)` }
-    var styleSeconds = { transform: `translate(-50%, -100%) rotate(${degrees.seconds}deg)` }
+    const styleMinutes = { transform:`translate(-50%, -100%) rotate(${degrees.minutes}deg)` };
+    const styleHours = { transform:`translate(-50%, -100%) rotate(${degrees.hours}deg)` };
+    const styleSeconds = { transform:`translate(-50%, -100%) rotate(${degrees.seconds}deg)` };
 
     return (
         <div className="dial">
